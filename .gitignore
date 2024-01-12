@@ -6,6 +6,7 @@ _site
 .bundle
 .sass-cache
 Gemfile.lock
+Gemfile
 node_modules
 package.json
 favicon.ico
