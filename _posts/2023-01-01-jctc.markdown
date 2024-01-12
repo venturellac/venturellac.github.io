@@ -2,12 +2,12 @@
 layout: post
 title:  "Machine Learning Many-Body Green's Functions for Molecular Excitation Spectra"
 date:   2024-01-01 00:00:00 +00:00
-image: /images/2024-jctc.jpg
+image: /images/jctc-2024.png
 categories: research
 author: "Christian Venturella"
 authors: "<strong>Christian Venturella</strong>, Christopher Hillenbrand, Jiachen Li, and Tianyu Zhu*"
 venue: "arXiv"
-arxiv: https://arxiv.org/abs/2308.14737
+arxiv: https://arxiv.org/abs/2310.09911
 ---
 A machine learning method for predicting many-body Green's Functions for realistic materials.
  
