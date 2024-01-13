@@ -6,10 +6,10 @@ image: /images/jctc-2024.png
 categories: research
 author: "Christian Venturella"
 authors: "<strong>Christian Venturella</strong>, Christopher Hillenbrand, Jiachen Li, and Tianyu Zhu*"
-venue: "arXiv"
+venue: "J. Chem. Theory Comput. 2024, 20, 1, 143–154"
 arxiv: https://arxiv.org/abs/2310.09911
 ---
-A machine learning method for predicting many-body Green's Functions for realistic materials.
+A machine learning method for predicting many-body Green's Functions for realistic molecules and materials.
  
 
 
