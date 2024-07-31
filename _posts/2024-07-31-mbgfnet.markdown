@@ -9,4 +9,4 @@ authors: "<strong>Christian Venturella</strong>, Jiachen Li, Christopher Hillenb
 venue: "ArXiV: Chemical Physics (physics.chem-ph)"
 arxiv: https://arxiv.org/abs/2407.20384
 ---
-A deep learning framework that unifies ground and excited state property prediction by targeting the many-body Green's function (MBGF) and self-energy. I design and implement a graph neural network that learns the underlying physics to derive properties with competitive accuracy with unprecedented data efficiency and transferability.
+A deep learning framework that unifies ground and excited state property prediction by targeting the many-body Green's function (MBGF) and self-energy. I design and implement a graph neural network that learns the underlying physics to derive properties with competitive accuracy, unprecedented data efficiency, and impressive transferability and generalizability.
