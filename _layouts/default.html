@@ -73,11 +73,11 @@
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
               <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
               {% if post.paper %}
               <a href="{{post.paper}}">paper</a> /
+              {% endif %}
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}">arxiv</a> /
               {% endif %}
               {% if post.code %}
               <a href="{{post.code}}">code</a> /
