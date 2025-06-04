@@ -7,6 +7,7 @@ categories: research
 author: "Christian Venturella"
 authors: "<strong>Christian Venturella</strong>, Jiachen Li, Christopher Hillenbrand, Ximena Leyva Peralta, Jessica Liu, Tianyu Zhu*"
 venue: "Nature Computational Science"
+paper: https://www.nature.com/articles/s43588-025-00810-z
 arxiv: https://arxiv.org/abs/2407.20384
 code: https://github.com/ZhuGroup-Yale/mlgf
 dataset: https://zenodo.org/records/15131927
