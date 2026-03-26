@@ -2,123 +2,91 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-  <!--<script async src="https://www.googletagmanager.com/gtag/js?id=MY_GA_TAG"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'MY_GA_TAG');
-  </script>-->
   <title>{{ site.name }}</title>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <meta name="author" content="{{ site.name }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
-              <h1>
-                Christian Venturella
-              </h1>
-              <p>I am a PhD candidate in theoretical chemistry at Yale, where I am advised by <a href="https://www.tianyuzhu.org/">Tianyu Zhu</a>. I am an <a href="https://ndseg.org/about">NDSEG</a> fellow working with the <a href="https://www.nre.navy.mil/organization/departments/code-33/division-332/computer-aided-materials-design">Office of Naval Research</a>.</p>
-              <p>
-                Before my PhD studies, I graduated summa cum laude from Princeton University, where I worked with <a href="https://chemistry.princeton.edu/faculty-research/faculty/gregory-scholes/">Greg Scholes</a>  for my undergraduate thesis.
-              </p>
-              <p style="text-align:center">
-                <a target="_blank" href="mailto:christian.venturella@yale.edu"> Email </a> &nbsp;/&nbsp;
-                <a href="data/ChristianVenturella_CV.pdf"> CV </a> &nbsp;/&nbsp;
-                <a href="https://github.com/venturellac"> GitHub </a> &nbsp;/&nbsp;
-                <a href="https://scholar.google.com/citations?user=2Gg5htcAAAAJ&hl"> Google Scholar </a> &nbsp;/&nbsp;
-                <a href="https://www.linkedin.com/in/christian-venturella-6a5405151/"> LinkedIn </a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/my_pfp.png">
-            </td>
-          </tr>
-        </table>
+  <div class="container">
+    <header class="hero">
+      <div class="hero-text">
+        <h1>Christian Venturella</h1>
+        <p>I am a PhD candidate in theoretical chemistry at Yale, where I am advised by <a href="https://www.tianyuzhu.org/">Tianyu Zhu</a>. I am an <a href="https://ndseg.org/about">NDSEG</a> fellow working with the <a href="https://www.nre.navy.mil/organization/departments/code-33/division-332/computer-aided-materials-design">Office of Naval Research</a>.</p>
+        <p>Before my PhD studies, I graduated <em>summa cum laude</em> from Princeton University, where I worked with <a href="https://chemistry.princeton.edu/faculty-research/faculty/gregory-scholes/">Greg Scholes</a> for my undergraduate thesis.</p>
+        
+        <div class="social-links">
+          <a class="chip" target="_blank" href="mailto:christian.venturella@yale.edu">Email</a>
+          <a class="chip" href="data/ChristianVenturella_CV.pdf">CV</a>
+          <a class="chip" href="https://github.com/venturellac">GitHub</a>
+          <a class="chip" href="https://scholar.google.com/citations?user=2Gg5htcAAAAJ&hl">Google Scholar</a>
+          <a class="chip" href="https://www.linkedin.com/in/christian-venturella-6a5405151/">LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-img-container">
+        <img class="hero-img" alt="Christian Venturella" src="images/my_pfp.png">
+      </div>
+    </header>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
-              <p>
-                I am interested in quantum chemistry, materials science, and artificial intelligence. Most of my research focuses on developing efficient and accurate methods for predicting many-electron material properties beyond the level of DFT. I broadly aim to combine modern techniques (e.g. AI/ML) and traditional physical chemistry to tackle challenges arising in spectroscopy, materials science, and catalysis. 
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
+    <section>
+      <h2 class="section-title">Research</h2>
+      <p>I am interested in quantum chemistry, materials science, and artificial intelligence. Most of my research focuses on developing efficient and accurate methods for predicting many-electron material properties beyond the level of DFT. I broadly aim to combine modern techniques (e.g. AI/ML) and traditional physical chemistry to tackle challenges arising in spectroscopy, materials science, and catalysis.</p>      
+      
+      <div class="papers">
+        {% for post in site.posts %}
           {% for cat in post.categories %}
-          {% if cat == 'research' %}
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              <br>
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-              {% if post.dataset %}
-              <a href="{{post.dataset}}">dataset</a> /
-              {% endif %}
-              <p></p>
-              {{ post.excerpt }}
-            </td>
-          </tr>
-          {% endif %}
+            {% if cat == 'research' %}
+            <article class="paper-card">
+              <div class="paper-img-container">
+                <img src="/tn{{post.image}}" alt="Paper Thumbnail" class="paper-img" />
+              </div>
+              <div class="paper-details">
+                <h3 class="paper-title">{{post.title}}</h3>
+                <div class="paper-authors">{{post.authors}}</div>
+                <div class="paper-venue">{{post.venue}}, {{ post.date | date: "%Y" }}</div>
+                
+                <div class="paper-links">
+                  {% if post.paper %}
+                  <a class="paper-link" href="{{post.paper}}" target="_blank">Paper</a>
+                  {% endif %}
+                  {% if post.arxiv %}
+                  <a class="paper-link" href="{{post.arxiv}}" target="_blank">ArXiv</a>
+                  {% endif %}
+                  {% if post.code %}
+                  <a class="paper-link" href="{{post.code}}" target="_blank">Code</a>
+                  {% endif %}
+                  {% if post.poster %}
+                  <a class="paper-link" href="{{post.poster}}" target="_blank">Poster</a>
+                  {% endif %}
+                  {% if post.slides %}
+                  <a class="paper-link" href="{{post.slides}}" target="_blank">Slides</a>
+                  {% endif %}
+                  {% if post.website %}
+                  <a class="paper-link" href="{{post.website}}" target="_blank">Website</a>
+                  {% endif %}
+                  {% if post.youtube %}
+                  <a class="paper-link" href="{{post.youtube}}" target="_blank">YouTube</a>
+                  {% endif %}
+                  {% if post.dataset %}
+                  <a class="paper-link" href="{{post.dataset}}" target="_blank">Dataset</a>
+                  {% endif %}
+                </div>
+                
+                <p class="paper-excerpt">{{ post.excerpt }}</p>
+              </div>
+            </article>
+            {% endif %}
           {% endfor %}
-          {% endfor %}
-        </table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:center;font-size:small;">
-                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
-              </p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
 </body>
-
 </html>
