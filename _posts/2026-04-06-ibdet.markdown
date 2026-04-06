@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Low-Scaling Many-Body Green's Function Calculations for Molecular Systems via Interacting-Bath Dynamical Embedding Theory"
+date:   2026-04-06 00:00:00 +00:00
+image: /images/ibdet-2026.png
+categories: research
+author: "Christian Venturella"
+authors: "<strong>Christian Venturella</strong>, Jiachen Li, and Tianyu Zhu*"
+venue: "arXiv 2026"
+arxiv: https://arxiv.org/abs/2604.03137
+---
+We present a molecular extension of a recently proposed Green's function embedding method, interacting-bath dynamical embedding theory (ibDET), for computing charged excitation energies at the GW and EOM-CCSD levels.
